@@ -1,7 +1,7 @@
 # GiaLinh_Nguyen_Trieu_Do_BrandMashup
 Nguyen Gia Linh and Trieu Do FIP
 ## Project Stipulations
- Create a responsive 5 page website for the new product mashup of GoldBond x Molson. The site must be designed for mobile first and have some interactivty on the products page for the user to interact with.
+ Create a responsive 5 page website for the new product mashup of Dos Equis X Right Guard. The site must be designed for mobile first and have some interactivty on the products page for the user to interact with.
  
  
  ## Contributors
