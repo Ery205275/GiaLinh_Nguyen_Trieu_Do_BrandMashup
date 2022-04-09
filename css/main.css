@@ -390,7 +390,9 @@ header:after{
 }
 /* Desktop Size HOME */
 @media screen and (min-width: 920px){
-
+    #heroSec{
+        background: none;
+    }
     #mainHeader{
         display: flex;
         flex-direction: row;
@@ -560,4 +562,195 @@ header:after{
 #new-mobile{
 	display: block;
 	margin: 0 auto;
+}
+/*Promotion Page*/
+#firstevent{
+	margin-top: 20px;
+	padding-top: 20px;
+	background: url(../images/1event-m.png) center no-repeat;
+	height: 210px;
+}
+
+#firsteventP{
+	display: none;
+}
+#eCon1{
+   
+    background-color:#19191999 ;
+}
+#firstevent h2{
+	margin: 0 auto;
+	padding-top: 10px;
+	padding-bottom: 5px;
+	font-size: 24px;
+	text-align: center;
+	font-family: 'Staatliches', cursive;
+	letter-spacing: 1.5px;
+	color: #fff;
+
+	max-width: 640px;
+}
+
+#firsteventText {
+	margin: 0 auto;
+	text-align: center;
+	color: #fff;
+
+	font-size: 14px;
+	line-height: 15px;
+	font-family: 'Montserrat', sans-serif;
+	padding-left: 15px;
+	padding-right: 15px;
+	padding-bottom: 15px;
+	max-width: 610px;
+}
+#leanrMore1{
+	font-family: 'Montserrat', sans-serif;
+	font-weight: bold;
+	display: block;
+	margin: 0 auto;
+	margin-top: 20px;
+	width: 150px;
+	text-align: center;
+	padding: 10px;
+	text-decoration: none;
+	color: white;
+	border: 1px solid;
+	border-radius: 25px;
+}
+
+#secondevent{
+	margin-top: 20px;
+	padding-top: 50px;
+	background: url(../images/Happy_hour.jpeg) center no-repeat;
+	height: 210px;
+}
+
+#secondeventP{
+	display: none;
+}
+#eCon2{
+   
+    background-color:#19191999 ;
+}
+#secondevent h2{
+	margin: 0 auto;
+	padding-top: 10px;
+	padding-bottom: 5px;
+	font-size: 24px;
+	text-align: center;
+	font-family: 'Staatliches', cursive;
+	letter-spacing: 1.5px;
+	color: #fff;
+	max-width: 640px;
+}
+
+#secondeventText {
+	margin: 0 auto;
+	text-align: center;
+	color: #fff;
+	font-size: 14px;
+	line-height: 15px;
+	font-family: 'Montserrat', sans-serif;
+	padding-left: 15px;
+	padding-right: 15px;
+	padding-bottom: 15px;
+	max-width: 610px;
+}
+#leanrMore2{
+	font-family: 'Montserrat', sans-serif;
+	font-weight: bold;
+	display: block;
+	margin: 0 auto;
+	margin-top: 20px;
+	width: 150px;
+	text-align: center;
+	padding: 10px;
+	text-decoration: none;
+	color: white;
+	border: 1px solid;
+	border-radius: 25px;
+}
+
+#thirdevent{
+	margin-top: 20px;
+	padding-top: 50px;
+	background: url(../images/Beer_bottle_many.jpeg) center no-repeat;
+	height: 110px;
+    margin-bottom: 50px;
+}
+
+#thirdeventP{
+	display: none;
+}
+
+#thirdevent h2{
+	margin: 0 auto;
+	padding-top: 10px;
+	padding-bottom: 5px;
+	font-size: 24px;
+	text-align: center;
+	font-family: 'Staatliches', cursive;
+	letter-spacing: 1.5px;
+	color: #fff;
+	background-color: #19191999;
+	max-width: 770px;
+}
+#leanrMore3{
+	font-family: 'Montserrat', sans-serif;
+	font-weight: bold;
+	display: block;
+	margin: 0 auto;
+	margin-top: 20px;
+	width: 150px;
+	text-align: center;
+	padding: 10px;
+	text-decoration: none;
+    background-color:#19191999 ;
+	color: white;
+	border: 1px solid;
+	border-radius: 25px;
+}
+/*tablet and destop*/
+@media screen and (min-width: 640px){
+    #firstevent{
+        background: none;
+        display:flex;
+        justify-content: center;
+       }
+    #firsteventP{
+        display: block;
+        width: auto;
+    }
+#eCon1{
+    display: flex;
+    flex-direction: column;
+    max-width: 500px;
+    background-color:#19191999 ;
+    height: 220px;
+    padding-top: 50px;
+}
+ #secondevent{
+        background: none;
+        display:flex;
+        justify-content: center;
+    }
+    #secondeventP{
+        display: block;
+        width: auto;
+    }
+    #eCon2{
+        display: flex;
+        flex-direction: column;
+        max-width: 500px;
+        background-color:#19191999 ;
+        height: 220px;
+        padding-top: 50px;
+    }
+
+    #thirdevent{
+        margin-top: 70px;
+        background: url(../images/soon-d.jpeg) center no-repeat;
+        
+    }
 }
