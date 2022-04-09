@@ -1,0 +1,757 @@
+.hidden {
+    display: none;
+}
+
+html{
+    box-sizing: border-box; 
+  }
+  
+.container{
+      margin: 0 auto;
+      max-width: 1400px;
+  }
+img, embed, object, video, picture{
+    max-width: 100%; 
+  }
+
+/*Header and Navigation */
+#mainLogo{
+	margin: 0 auto;
+	display: block;
+    width: 20%;
+}
+
+#hamburger{
+	border: none;
+}
+
+#mainHeader{
+    background-color: beige;
+	margin-left: 10px;
+	margin-right: 10px;
+}
+
+#mainNav{
+	text-align: right;
+	margin-right: 25px;
+}
+
+#mainNav button{
+	background: url(../images/hamburger.svg) center no-repeat;
+	transition: all .1s ease;
+	width: 35px;
+	height: 35px;
+	border: 0px;
+}
+
+#mainNav button.clicked{
+	transform: rotate(90deg);
+}
+
+#mainNav a{
+	text-decoration: none;
+	color: #efefef;
+}
+
+#mainNav li a{
+	font-family: sans-serif;
+	display: block;
+	color: #d21e2f;
+	padding: 10px 0 10px 0;
+	font-size: 18px;
+}
+
+#hamDiv{
+	margin-top: 15px;
+	display: none;
+}
+
+#hamDiv.slide{
+	display: block;
+}
+
+header:after{
+	content:"";
+	display: block;
+	width: 280px;
+	border-bottom: 3px solid #d21e2f;
+	margin: 15px auto 0 auto;
+}
+
+/* Footer */
+#mobile-footer{
+	background-color: beige;
+	margin-top: 10px;
+}
+
+#footerContent{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+#footerLogo{
+	max-width: 10%;
+	margin-left: 10px;
+    margin-top: 10px;
+}
+
+#footerNav{
+	display: none;
+}
+
+#footer_social ul{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	padding: 15px;
+    padding-left: 400px;
+}
+
+#footer_social img{
+	max-width: 50%;
+}
+
+.socialNav img{
+	display: block;
+	margin: 0 auto;
+}
+
+#return{
+	margin-top: 45px;
+	margin-right: 45px;
+	display: block;
+    float: right;
+}
+
+/* Contact Page Content */
+#contact{
+	margin: 0 auto;
+	margin-top: 50px;
+	margin-bottom: 50px;
+	padding-bottom: 25px;
+	background: url('../images/Contact_bg.jpeg') no-repeat;
+	background-position: center;
+}
+
+#contactTitle{
+	font-family: 'Montserrat', sans-serif;
+	font-size: 20px;
+	font-weight: bold;
+	text-align: center;
+	margin-bottom: 15px;
+	color: #d01f2f;
+}
+
+#contactForm{
+	padding-top: 20px;
+}
+
+#contactForm input{
+	display: block;
+	margin: 0 auto;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	padding: 10px;
+	width: 200px;
+	border: 1px solid #F2F2F2;
+}
+
+#message{
+	width: 200px;
+	height: 75px;
+}
+
+#submit{
+	font-family: 'Montserrat', sans-serif;
+	font-weight: bold;
+	display: block;
+	margin: 0 auto;
+	margin-top: 20px;
+	width: 150px;
+	text-align: center;
+	padding: 10px;
+	text-decoration: none;
+	color: #d01f2f;
+	border: 1px solid;
+	border-radius: 25px;
+}
+
+#submit:hover{
+	background-color: #fff;
+}
+
+#contactInfo{
+	margin-top: 25px;
+}
+
+#info{
+	width: 250px;
+	margin: 0 auto;
+}
+
+#contactInfo ul{
+	margin-bottom: 35px;
+}
+
+#contactInfo ul li{
+ margin: 10px 0 10px 0;
+ text-align: center;
+ font-family: 'Montserrat', sans-serif;
+ font-weight: bold;
+ color: #d01f2f;
+ cursor: pointer;
+}
+
+#infoHead{
+	font-family: 'Montserrat', sans-serif;
+	font-weight: bolder;
+	text-align: center;
+	margin-bottom: 5px;
+	font-size: 20px;
+}
+
+/* Contact Page changes for tablet */
+@media screen and (min-width: 641px){
+
+    #contact{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+    
+    #contactInfo{
+        margin-top: auto;
+        margin-bottom: auto;
+        margin-left: 20px;
+    }
+    
+    #contactForm{
+        margin-right: 20px;
+    }
+    
+    #contactTitle{
+        font-size: 24px;
+    }
+    
+    #contactForm input{
+        width: 300px;
+    }
+    
+    #message{
+        height: 150px;
+    }
+}
+/* Contact Page Changes for Desktop */
+@media screen and (min-width: 1000px) 
+{
+    #contact{
+        justify-content: center; 
+        max-width: 1400px;
+}
+}
+
+/* Main Page */
+#heroSec{
+	margin-top: 20px;
+	padding-top: 50px;
+	background: url(../images/New_beer.jpeg) center no-repeat;
+	height: 210px;
+}
+
+#hero-d{
+	display: none;
+}
+
+#heroH2{
+	margin: 0 auto;
+	padding-top: 10px;
+	padding-bottom: 5px;
+	font-size: 24px;
+	text-align: center;
+	font-family: 'Staatliches', cursive;
+	letter-spacing: 1.5px;
+	color: #fff;
+	background-color: #19191999;
+	max-width: 640px;
+}
+
+#heroP{
+	margin: 0 auto;
+	text-align: center;
+	color: #fff;
+	background-color: #19191999;
+	font-size: 14px;
+	line-height: 15px;
+	font-family: 'Montserrat', sans-serif;
+	padding-left: 15px;
+	padding-right: 15px;
+	padding-bottom: 15px;
+	max-width: 610px;
+}
+
+#popAd
+{
+	display: flex;
+	width: 100%;
+	margin-top: 10px;
+    position: relative;
+    justify-content: center;
+}
+#popAd img{
+   width: 1400px;
+}
+
+#popAd button
+{
+  position: absolute;
+  text-align: center; 
+  width: 100px;
+  height: 50px;
+  top: 40%;
+  background-color: black;
+  font-size: 15px;
+}
+
+
+#ourProducts{
+	background-color: #00154f;
+	margin-top: 20px;
+	padding: 15px;
+}
+
+#ourProducts img{
+	display: block;
+	margin: 0 auto;
+    height: 200px;
+}
+
+#ourProducts h2{
+	font-family: 'Staatliches', cursive;
+	font-size: 24px;
+	text-align: center;
+	color: #fff;
+	letter-spacing: 1.5px;
+}
+
+#ourProducts h3{
+	font-family: 'Montserrat', sans-serif;
+	color: #fff;
+	text-align: center;
+	font-size: 16px;
+	letter-spacing: 1px;
+	margin-top: 10px;
+}
+
+.products{
+	margin: 25px 0 25px 0;
+}
+
+.productsButton{
+	display: none;
+}
+
+#infoMain
+{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+    align-content: center;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+#infoMain ul
+{
+	height: 150px;
+	margin-top: 25px;
+	margin-right: 8px;
+    padding: 10px;
+}
+#submitbox{
+    padding-top: 60px;
+}
+/*Home Page at tablet size HOME */
+@media screen and (min-width: 640px){
+    #heroSec{
+        background: url(../images/Hero.jpeg) center no-repeat;
+    }
+    
+    #products-cont{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+    
+    .products{
+        margin: 10px;
+    }
+    
+}
+/* Desktop Size HOME */
+@media screen and (min-width: 920px){
+    #heroSec{
+        background: none;
+    }
+    #mainHeader{
+        display: flex;
+        flex-direction: row;
+    }
+    
+    #hamburger{
+        display: none;
+    }
+    
+    #hamDiv{
+        display: flex;
+        align-items: baseline;
+    }
+    
+    #hamDiv ul{
+        display: flex;
+        flex-direction: row;
+        margin-top: 50px;
+    }
+    
+    #hamDiv ul li{
+        font-weight: bold;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    
+    #hamDiv ul li a{
+        font-size: 20px;
+    }
+    .active-page{
+        border-bottom: 1px solid #d21e2f;
+    }
+    
+    header:after{
+        display: none;
+    }
+    
+    #hero-d{
+        display: block;
+        margin: 0 auto;
+    }
+    
+    #heroSec{
+        height: 100%
+    }
+    
+    #heroH2{
+        color: #d21e2f;
+        background-color: #fff;
+        margin-top: 35px;
+        margin-bottom: 5px;
+    }
+    
+    #heroP{
+        color: #000000;
+        background-color: #fff;
+    }
+    #footerLogo{
+        margin-left: 25px;
+    }
+    
+    #footerNav{
+        display: flex;
+        margin-top: 20px;
+        margin-left: 20px;
+    }
+    
+    #footerNav ul li{
+        font-weight: bold;
+        display: inline-block;
+        padding: 0 10px 0 10px;
+    }
+    
+    #footerNav ul li a{
+        text-decoration: none;
+        color: #d21e2f;
+    }
+    
+    #return{
+        display: none;
+    }
+    
+    .socialNav{
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+    }
+    }
+/*Product Page*/
+.productH2{
+	font-size: 24px;
+	font-weight: bold;
+	text-align: center;
+	margin-bottom: 15px;
+	margin-top:  20px;
+	color: red;
+}
+
+#productList{
+	margin-top: 15px;
+	background-color: beige;
+	padding: 15px;
+}
+#feature{
+	background-color: #DEDEDE;
+	padding: 15px;
+}
+.featureRow{
+    margin: auto 0;
+}
+.featureRow img{
+	width: 10%;
+}
+.featureRow h3{
+	text-align: center;
+	margin: 15px 0 5px 0;
+	font-family: 'Montserrat', sans-serif;
+	font-weight: bold;
+	font-size: 18px;
+	color: #000;
+}
+@media screen and (min-width: 500px){
+
+    
+    #feature{
+        display: flex;
+        justify-content: space-around;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    
+    .featureRow img{
+        width: 50%;
+        cursor: pointer;
+    }
+    
+    .featureRow{
+        padding-top: 40px;
+    }
+    }
+    
+    @media screen and (min-width: 800px){
+    
+    
+    #feature{
+        margin-bottom: 10px;
+    }
+    
+    .featureRow img{
+        width: 60%;
+        cursor: pointer;
+    }
+    }
+/*About Page*/
+#newText{
+	display: none;
+}
+
+#new h2{
+	font-family: 'Staatliches', cursive;
+	text-align: center;
+	letter-spacing: 1.5px;
+	font-weight: bold;
+	font-size: 24px;
+	margin: 20px 0 10px 0;
+}
+#new-mobile{
+	display: block;
+	margin: 0 auto;
+}
+/*Promotion Page*/
+#firstevent{
+	margin-top: 20px;
+	padding-top: 20px;
+	background: url(../images/1event-m.png) center no-repeat;
+	height: 210px;
+}
+
+#firsteventP{
+	display: none;
+}
+#eCon1{
+   
+    background-color:#19191999 ;
+}
+#firstevent h2{
+	margin: 0 auto;
+	padding-top: 10px;
+	padding-bottom: 5px;
+	font-size: 24px;
+	text-align: center;
+	font-family: 'Staatliches', cursive;
+	letter-spacing: 1.5px;
+	color: #fff;
+
+	max-width: 640px;
+}
+
+#firsteventText {
+	margin: 0 auto;
+	text-align: center;
+	color: #fff;
+
+	font-size: 14px;
+	line-height: 15px;
+	font-family: 'Montserrat', sans-serif;
+	padding-left: 15px;
+	padding-right: 15px;
+	padding-bottom: 15px;
+	max-width: 610px;
+}
+#leanrMore1{
+	font-family: 'Montserrat', sans-serif;
+	font-weight: bold;
+	display: block;
+	margin: 0 auto;
+	margin-top: 20px;
+	width: 150px;
+	text-align: center;
+	padding: 10px;
+	text-decoration: none;
+	color: white;
+	border: 1px solid;
+	border-radius: 25px;
+}
+
+#secondevent{
+	margin-top: 20px;
+	padding-top: 50px;
+	background: url(../images/Happy_hour.jpeg) center no-repeat;
+	height: 210px;
+}
+
+#secondeventP{
+	display: none;
+}
+#eCon2{
+   
+    background-color:#19191999 ;
+}
+#secondevent h2{
+	margin: 0 auto;
+	padding-top: 10px;
+	padding-bottom: 5px;
+	font-size: 24px;
+	text-align: center;
+	font-family: 'Staatliches', cursive;
+	letter-spacing: 1.5px;
+	color: #fff;
+	max-width: 640px;
+}
+
+#secondeventText {
+	margin: 0 auto;
+	text-align: center;
+	color: #fff;
+	font-size: 14px;
+	line-height: 15px;
+	font-family: 'Montserrat', sans-serif;
+	padding-left: 15px;
+	padding-right: 15px;
+	padding-bottom: 15px;
+	max-width: 610px;
+}
+#leanrMore2{
+	font-family: 'Montserrat', sans-serif;
+	font-weight: bold;
+	display: block;
+	margin: 0 auto;
+	margin-top: 20px;
+	width: 150px;
+	text-align: center;
+	padding: 10px;
+	text-decoration: none;
+	color: white;
+	border: 1px solid;
+	border-radius: 25px;
+}
+
+#thirdevent{
+	margin-top: 20px;
+	padding-top: 50px;
+	background: url(../images/Beer_bottle_many.jpeg) center no-repeat;
+	height: 110px;
+    margin-bottom: 50px;
+}
+
+#thirdeventP{
+	display: none;
+}
+
+#thirdevent h2{
+	margin: 0 auto;
+	padding-top: 10px;
+	padding-bottom: 5px;
+	font-size: 24px;
+	text-align: center;
+	font-family: 'Staatliches', cursive;
+	letter-spacing: 1.5px;
+	color: #fff;
+	background-color: #19191999;
+	max-width: 770px;
+}
+#leanrMore3{
+	font-family: 'Montserrat', sans-serif;
+	font-weight: bold;
+	display: block;
+	margin: 0 auto;
+	margin-top: 20px;
+	width: 150px;
+	text-align: center;
+	padding: 10px;
+	text-decoration: none;
+    background-color:#19191999 ;
+	color: white;
+	border: 1px solid;
+	border-radius: 25px;
+}
+/*tablet and destop*/
+@media screen and (min-width: 640px){
+    #firstevent{
+        background: none;
+        display:flex;
+        justify-content: center;
+       }
+    #firsteventP{
+        display: block;
+        width: auto;
+    }
+#eCon1{
+    display: flex;
+    flex-direction: column;
+    max-width: 500px;
+    background-color:#19191999 ;
+    height: 220px;
+    padding-top: 50px;
+}
+ #secondevent{
+        background: none;
+        display:flex;
+        justify-content: center;
+    }
+    #secondeventP{
+        display: block;
+        width: auto;
+    }
+    #eCon2{
+        display: flex;
+        flex-direction: column;
+        max-width: 500px;
+        background-color:#19191999 ;
+        height: 220px;
+        padding-top: 50px;
+    }
+
+    #thirdevent{
+        margin-top: 70px;
+        background: url(../images/soon-d.jpeg) center no-repeat;
+        
+    }
+}
+
