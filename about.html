@@ -36,21 +36,40 @@
               <img src="images/New_beer.jpeg" id="new-mobile" alt="New Mobile Img"/>
             </picture>
           </section>
-
-          <section id="recipe">
-            <h2>What's in our beer?</h2>
-             <p id="recipeText">Brewing barley in Canada is about 20% Of all the barley produced here and is considered a speciality crop. Other grains that can be used include wheat, rye, oats and sorghum. Each of them has advantages, but barley continues to be the majority of all grains used in the brewery. Even in wheat beer, the proportion of barley is generally higher than 50%. This is due to the reality that other grains are malted without pods and are difficult to filter on their own. Malt provides a spectrum of beer colour that goes from pale straw to black. The pale malt creates the lighter colour and flavours observed in the easier beers to drink and soak thirst while the dark malts are responsible for richer and more robust colours in wearers and stouts.</p>
-            <picture id="recipeImg">
-              <source media="(min-width: 1064px)" srcset="img/recipeBeer-d.png">
-              <source media="(min-width: 450px)" srcset="img/recipeBeer-t.png" >
-              <img src="img/recipeBeer.png" id="new-mobile" alt="Recipe Mobile Img"/>
+          <section id="hero">
+            <img src="images/bottle_2.png" alt="Beer Bottle" id="bottle" width="160px" height="400px">
+          </section>
+          <section id="new">
+            <h2>Unique and Novel</h2>
+            <p id="recipeText">Brewing barley in Canada is about 20% Of all the barley produced here and is considered a speciality crop. Other grains that can be used include wheat, rye, oats and sorghum. Each of them has advantages, but barley continues to be the majority of all grains used in the brewery. Even in wheat beer, the proportion of barley is generally higher than 50%. This is due to the reality that other grains are malted without pods and are difficult to filter on their own. Malt provides a spectrum of beer colour that goes from pale straw to black. The pale malt creates the lighter colour and flavours observed in the easier beers to drink and soak thirst while the dark malts are responsible for richer and more robust colours in wearers and stouts.</p>
+          </section>
+             
+             <picture id="recipeImg">
+              <img src="images/Promotion ads.png" id="new-mobile" alt="Recipe Mobile Img"/>
             </picture>
-          </section>
-        
-          <section id="promoVideo">
-            <h2 class="hidden">Promo Video</h2>
-            <iframe width="560" height="315" id="videoCon" src="..." title="Dos Equis Mashup Video" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-          </section>
+            <section id="new">
+              <h2>Our right decision for you</h2>
+              <p id="recipeText">Our goal here was not to focus on these products as individuals, we focused on what the outcome is when they are combined - A great beer with MAXIMUM STRENGTH! 
+                When you combine 2 great things, what you get is the ultimate product. Many new Labels, new packaging. Get ready for the Don Equis and Right Gruad</p>
+                <h2 class="hidden">Promo Video</h2>
+            <video id="video1" width="auto">
+              <source src="images/Promoton video.mp4" type="video/mp4">
+              <source src="images/Promoton video.mp4" type="video/ogg">
+            </video>
+            <div>
+            <button onclick="playPause()">Play/Pause</button>
+          </div>
+            <script> 
+              var myVideo = document.getElementById("video1"); 
+              
+              function playPause() { 
+                if (myVideo.paused) 
+                myVideo.play(); 
+                else 
+                myVideo.pause(); 
+              } 
+              </script> 
+              </section>
 
     <footer id="mobile-footer">
         <h1 class="hidden">Footer</h1>
