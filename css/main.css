@@ -14,6 +14,11 @@ img, embed, object, video, picture{
     max-width: 100%; 
   }
 
+p{
+	display: flex;
+	text-align: center;
+}
+
 /*Header and Navigation */
 #mainLogo{
 	margin: 0 auto;
@@ -76,6 +81,38 @@ header:after{
 	width: 280px;
 	border-bottom: 3px solid #d21e2f;
 	margin: 15px auto 0 auto;
+}
+
+#searchitems
+{   
+    font-family: 'Ballet', cursive;
+    font-family: 'Dancing Script', cursive;
+    margin-top: 5px;
+ 	padding: auto;
+ 	margin-left: auto;
+ 	display: flex;
+ 	flex-direction: column;
+}
+#searchitems a
+{
+	padding-top: 12px;
+	font-size: 18px;
+	margin-left: auto;
+}
+#searchForm
+{
+	margin-left: auto;
+}
+
+#searchForm input
+{
+	width: 150px;
+	border: 1px solid #d1d1d1;
+	border-radius: 20px;
+	padding: 5px 20px 5px 30px; /*trbl*/
+	background: url('../images/search_glass.jpeg') no-repeat #fcfcfc 8px 4px;
+	background-size: 20px;
+	box-shadow: 0 1px 3px rgba(0,0,0,.15) inset;
 }
 
 /* Footer */
@@ -485,16 +522,70 @@ header:after{
 .productH2{
 	font-size: 24px;
 	font-weight: bold;
-	text-align: center;
 	margin-bottom: 15px;
 	margin-top:  20px;
 	color: red;
 }
 
 #productList{
+	display: flex;
+	flex-wrap: nowrap;
+	justify-content: space-around;
 	margin-top: 15px;
 	background-color: beige;
 	padding: 15px;
+}
+
+#Product1 
+{
+  width: 405px;
+}
+
+#Product1text 
+{
+font-size: 20px;
+  width: 405px;;
+}
+#Product2
+{
+  width: 405px;
+
+}
+#Product2text 
+{
+	font-size: 20px;
+  width: 405px;
+  margin: 20px;
+}
+#productList2{
+	display: flex;
+	flex-wrap: nowrap;
+	justify-content: space-between;
+	margin-top: 15px;
+	background-color: beige;
+	padding: 15px;
+}
+
+#Product3 
+{
+  width: 405px;
+}
+
+#Product3text 
+{
+font-size: 20px;
+  width: 405px;;
+}
+#Product4
+{
+  width: 405px;
+
+}
+#Product4text 
+{
+	font-size: 20px;
+  width: 405px;
+  margin: 20px;
 }
 #feature{
 	background-color: #DEDEDE;
@@ -513,8 +604,29 @@ header:after{
 	font-weight: bold;
 	font-size: 18px;
 	color: #000;
+
 }
+
+
 @media screen and (min-width: 500px){
+
+	#productList{
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-around;
+		flex-direction: row;
+		margin-top: 15px;
+		background-color: beige;
+	}
+
+	#productList2{
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-around;
+		flex-direction: row;
+		margin-top: 15px;
+		background-color: beige;
+	}
 
     
     #feature{
@@ -536,7 +648,24 @@ header:after{
     
     @media screen and (min-width: 800px){
     
-    
+		#productList{
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: space-around;
+			flex-direction: row;
+			margin-top: 15px;
+			background-color: beige;
+		}
+	
+		#productList2{
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: space-around;
+			flex-direction: row;
+			margin-top: 15px;
+			background-color: beige;
+		}
+	
     #feature{
         margin-bottom: 10px;
     }
@@ -711,6 +840,8 @@ header:after{
 	border: 1px solid;
 	border-radius: 25px;
 }
+
+
 /*tablet and destop*/
 @media screen and (min-width: 640px){
     #firstevent{
@@ -755,3 +886,73 @@ header:after{
     }
 }
 
+#hero
+{
+	display: flex;
+	height: 420px;
+	width: 100%;
+	position: relative;
+	overflow: hidden;
+}
+
+#bottle
+{
+	display: flex;
+	position: absolute;
+	left: 40%;
+	/*left: -100px;*/
+	animation: 2s linear slidein;
+}
+
+@keyframes slidein {
+	0% {
+		left: -1000px;
+	}
+
+	80% {
+		left: 900px;
+		transform:skewX(10deg);
+	}
+
+}
+
+  @keyframes slideLeft {
+	from {
+	  transform: translateX(500px);
+	}
+  
+	to {
+	  transform: translateX(-0px);
+	}
+  }
+  
+  @keyframes slideDown {
+	from {
+	  transform: translateY(-500px);
+	}
+  
+	to {
+	  transform: translateY(0px);
+	}
+  }
+  
+  
+  @keyframes slideUp {
+	from {
+	  transform: translateY(1000px);
+	}
+  
+	to {
+	  transform: translateY(-0px);
+	}
+  }
+  
+  @keyframes fadeIn {
+	from {
+	  opacity: 0;
+	}
+  
+	to {
+	  opacity: 1;
+	}
+  }
